@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683208416859",
+    "project_id": "wikizinha-8398e",
+    "storage_bucket": "wikizinha-8398e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683208416859:android:d5d0be78328f7171cee97e",
+        "android_client_info": {
+          "package_name": "com.example.wikizinha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683208416859-c6qctth0easlqre988h60a4v9d6i61t5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS-0mkWzE81nOyVC60A3ieVnqafwSWim4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683208416859-c6qctth0easlqre988h60a4v9d6i61t5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

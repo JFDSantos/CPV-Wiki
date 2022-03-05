@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/background_verde"
+    tools:context=".Categorias">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/main_toolbar" />
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_Categoria"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="40dp"
+                android:text="@string/txt_categoria"
+                android:fontFamily="@font/jockey_one"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="65dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txt_EnsinoMedio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_Categoria"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/jockey_one"
+                style="@style/form_Categorias"
+                android:text="Ensino Médio"
+                android:padding="20dp"
+                android:onClick="ClickEmBreve"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txt_TecQuimica"
+                style="@style/form_Categorias"
+                android:layout_marginTop="30dp"
+                android:text="Técnico Química"
+                android:textSize="22dp"
+                android:fontFamily="@font/jockey_one"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_EnsinoMedio"
+                android:padding="20dp"
+                android:onClick="ClickEmBreve"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txt_TecInfo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_TecQuimica"
+                android:layout_marginTop="30dp"
+                style="@style/form_Categorias"
+                android:textSize="22dp"
+                android:fontFamily="@font/jockey_one"
+                android:text="Técnico Informática"
+                android:onClick="ClickEmBreve"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txt_TecAdm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_TecInfo"
+                android:layout_marginTop="30dp"
+                style="@style/form_Categorias"
+                android:textSize="22dp"
+                android:fontFamily="@font/jockey_one"
+                android:text="Técnico em Administração"
+                android:padding="20dp"
+                android:onClick="ClickEmBreve"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txt_Ferramentas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_TecAdm"
+                android:layout_marginTop="30dp"
+                style="@style/form_Categorias"
+                android:textSize="22dp"
+                android:fontFamily="@font/jockey_one"
+                android:text="Ferramentas"
+                android:padding="20dp"
+                android:onClick="ClickEmBreve"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+        <include
+            layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

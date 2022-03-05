@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/arsenal</item>
+        <item>@font/audiowide</item>
+        <item>@font/baloo_chettan</item>
+        <item>@font/contrail_one</item>
+        <item>@font/doppio_one</item>
+        <item>@font/jockey_one</item>
+        <item>@font/marvel</item>
+    </array>
+</resources>

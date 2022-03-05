@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_verde"
+    tools:context=".Splash">
+
+    <View
+        android:id="@+id/i_circulo"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:background="@drawable/container_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf="@id/i_circulo"
+        app:layout_constraintEnd_toEndOf="@id/i_circulo"
+        app:layout_constraintTop_toTopOf="@id/i_circulo"
+        app:layout_constraintBottom_toBottomOf="@id/i_circulo"
+        android:src="@drawable/ifsp_logo2"
+        android:id="@+id/img_ifsp"/>
+
+    <TextView
+        android:id="@+id/txtIFSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/audiowide"
+        android:text="CPV-Wiki"
+        android:textAlignment="center"
+        android:textColor="@color/verde_escuro"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/i_circulo" />
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:indeterminateTint="@color/verde_escuro"
+        />
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
